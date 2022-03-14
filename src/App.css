@@ -1,38 +1,26 @@
-.App {
-  text-align: center;
+/* Color palette 
+
+Indigo Dye: #2b4162
+Blue Sapphire: #385f71
+Magnolia: #f5f0f6
+Burlywood: #d7b377
+French Bistre: #8f754f
+
+
+*/
+body {
+  font-family: 'Montserrat', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: #2b4162;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#navbar {
+  background-color: #385f71;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#navbar-brand {
+  font-size: 1.5rem;
+  color: #f5f0f6;
 }

@@ -1,24 +1,67 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { Navbar, Nav, Container, Offcanvas } from 'react-bootstrap';
+import Home from './Pages/Home';
+import Projects from './Pages/Projects';
+import About from './Pages/About';
+import Contact from './Pages/Contact';
+import ErrorPage from './Pages/ErrorPage';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <Router>
+      <Navbar id='navbar' sticky='top' variant='dark' expand={false}>
+        <Container
+          fluid
+          style={{
+            marginLeft: '1rem',
+            marginRight: '1rem',
+            fontSize: '1.25rem',
+          }}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <Navbar.Brand id='navbar-brand' as={Link} to='/'>
+            Jorge Garcia
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls='offcanvasNavbar' />
+          <Navbar.Offcanvas
+            id='offcanvasNavbar'
+            aria-labelledby='offcanvasNavbarLabel'
+            placement='end'
+          >
+            <Offcanvas.Header closeButton>
+              <Offcanvas.Title id='offcanvasNavbarLabel'>
+                Jorge Garcia
+              </Offcanvas.Title>
+            </Offcanvas.Header>
+            <Offcanvas.Body id='off-canvas-body'>
+              <Nav className='me-auto'>
+                <Nav.Link as={Link} to='/'>
+                  Home
+                </Nav.Link>
+                <Nav.Link as={Link} to='/about'>
+                  About
+                </Nav.Link>
+                <Nav.Link as={Link} to='/projects'>
+                  Projects
+                </Nav.Link>
+                <Nav.Link as={Link} to='/contact'>
+                  Contact
+                </Nav.Link>
+              </Nav>
+            </Offcanvas.Body>
+          </Navbar.Offcanvas>
+        </Container>
+      </Navbar>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/projects' element={<Projects />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='*' element={<ErrorPage />} />
+      </Routes>
+    </Router>
   );
 }
 
