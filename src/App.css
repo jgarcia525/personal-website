@@ -24,3 +24,7 @@ h1 {
   font-size: 1.5rem;
   color: #f5f0f6;
 }
+
+.offcanvas {
+  max-width: 80vw;
+}

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { Navbar, Nav, Container, Offcanvas } from 'react-bootstrap';
 import Home from './Pages/Home';
@@ -10,6 +10,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 function App() {
+  const [showOffCanvas, setShowOffCanvas] = useState(false);
+
+  const toggleShowOffCanvas = () => setShowOffCanvas(!showOffCanvas);
+
   return (
     <Router>
       <Navbar id='navbar' sticky='top' variant='dark' expand={false}>
@@ -24,29 +28,41 @@ function App() {
           <Navbar.Brand id='navbar-brand' as={Link} to='/'>
             Jorge Garcia
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls='offcanvasNavbar' />
+          <Navbar.Toggle
+            aria-controls='offcanvasNavbar'
+            onClick={toggleShowOffCanvas}
+          />
           <Navbar.Offcanvas
             id='offcanvasNavbar'
             aria-labelledby='offcanvasNavbarLabel'
             placement='end'
+            show={showOffCanvas}
           >
-            <Offcanvas.Header closeButton>
+            <Offcanvas.Header
+              closeButton={true}
+              closeLabel={'close button'}
+              onHide={toggleShowOffCanvas}
+            >
               <Offcanvas.Title id='offcanvasNavbarLabel'>
                 Jorge Garcia
               </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body id='off-canvas-body'>
               <Nav className='me-auto'>
-                <Nav.Link as={Link} to='/'>
+                <Nav.Link as={Link} to='/' onClick={toggleShowOffCanvas}>
                   Home
                 </Nav.Link>
-                <Nav.Link as={Link} to='/about'>
+                <Nav.Link as={Link} to='/about' onClick={toggleShowOffCanvas}>
                   About
                 </Nav.Link>
-                <Nav.Link as={Link} to='/projects'>
+                <Nav.Link
+                  as={Link}
+                  to='/projects'
+                  onClick={toggleShowOffCanvas}
+                >
                   Projects
                 </Nav.Link>
-                <Nav.Link as={Link} to='/contact'>
+                <Nav.Link as={Link} to='/contact' onClick={toggleShowOffCanvas}>
                   Contact
                 </Nav.Link>
               </Nav>
