@@ -40,12 +40,13 @@ function App() {
           >
             <Offcanvas.Header
               closeButton={true}
+              closeVariant={'white'}
               closeLabel={'close button'}
               onHide={toggleShowOffCanvas}
             >
-              <Offcanvas.Title id='offcanvasNavbarLabel'>
+              {/* <Offcanvas.Title id='offcanvasNavbarLabel'>
                 Jorge Garcia
-              </Offcanvas.Title>
+              </Offcanvas.Title> */}
             </Offcanvas.Header>
             <Offcanvas.Body id='off-canvas-body'>
               <Nav className='me-auto'>
