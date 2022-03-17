@@ -8,7 +8,7 @@
 
 /* Typewritter effect */
 .type-writter {
-  width: 19ch;
+  width: 18.5ch;
   animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
