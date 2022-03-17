@@ -1,0 +1,33 @@
+/* Color palette */
+:root {
+  --raisin-black: #272932;
+  --steel-blue: #4d7ea8;
+  --grey-web: #828489;
+  --heliotrope-gray: #9e90a2;
+  --light-steel-blue: #b6c2d9;
+}
+
+/* Sitewide theme */
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  color: var(--steel-blue);
+}
+
+.section-steel-blue {
+  background-color: #4d7ea8;
+  height: 100vh;
+}
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  padding: 1rem;
+}
+
+.hero-image {
+  height: 50vh;
+  width: auto;
+}

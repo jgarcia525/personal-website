@@ -1,0 +1,44 @@
+/* Navbar */
+#navbar {
+  background-color: var(--raisin-black);
+}
+
+.navbar-container {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+}
+
+#navbar-brand {
+  font-size: 1.5rem;
+  color: #f5f0f6;
+}
+
+/* Offcanvas */
+.offcanvas {
+  max-width: 80vw;
+  background-color: var(--raisin-black);
+}
+
+.offcanvas-header {
+  display: block;
+  text-align: right;
+}
+
+.btn-close:active {
+  border-color: var(--steel-blue);
+}
+
+.offcanvas-body {
+  align-items: right;
+}
+
+.nav-link {
+  color: var(--heliotrope-gray);
+  text-align: right;
+  font-size: 1.5rem;
+}
+
+.nav-link:hover {
+  color: var(--steel-blue);
+}
