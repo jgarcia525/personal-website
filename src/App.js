@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Splash, About, Projects, Contact, ErrorPage } from './Pages';
 import { PageWithNavigation } from './Components';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Styles/app.css';
 
