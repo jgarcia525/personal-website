@@ -11,7 +11,7 @@ const NavigationBar = () => {
   return (
     <Navbar id='navbar' sticky='top' variant='dark' expand={false}>
       <Container fluid className='navbar-container'>
-        <Navbar.Brand id='navbar-brand' as={Link} to='/'>
+        <Navbar.Brand className='navbar-brand' as={Link} to='/'>
           Jorge Garcia
         </Navbar.Brand>
         <Navbar.Toggle

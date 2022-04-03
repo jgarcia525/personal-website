@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Splash, About, Projects, Contact, ErrorPage } from './Pages';
+import { SplashPage, About, Projects, Contact, ErrorPage } from './Pages';
 import { PageWithNavigation } from './Components';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -10,7 +10,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path='/' element={<Splash />} />
+        <Route path='/' element={<SplashPage />} />
         <Route
           path='/about'
           element={<PageWithNavigation page={<About />} />}

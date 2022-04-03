@@ -1,5 +1,5 @@
 /* Navbar */
-#navbar {
+.navbar {
   background-color: var(--raisin-black);
 }
 
@@ -9,7 +9,13 @@
   font-size: 1.25rem;
 }
 
-#navbar-brand {
+.navbar-brand {
   font-size: 1.5rem;
   color: #f5f0f6;
+}
+
+.navbar-brand img {
+  width: 56px;
+  margin-top: -8px;
+  margin-bottom: -8px;
 }

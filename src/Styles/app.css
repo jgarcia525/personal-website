@@ -2,9 +2,9 @@
 :root {
   --raisin-black: #272932;
   --steel-blue: #4d7ea8;
-  --grey-web: #828489;
-  --heliotrope-gray: #9e90a2;
-  --light-steel-blue: #b6c2d9;
+  --baby-powder: #f9f7f3;
+  --medium-champagne: #eddea4;
+  --atomic-tangerine: #f7a072;
 }
 
 /* Sitewide theme */
@@ -52,7 +52,7 @@ h1 {
 }
 
 .nav-link {
-  color: var(--heliotrope-gray);
+  color: var(--atomic-tangerine);
   text-align: right;
   font-size: 1.5rem;
 }

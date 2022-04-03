@@ -6,11 +6,7 @@
   justify-content: center;
 }
 
-/* Typewritter effect */
 .type-writer-container {
-  margin-bottom: 1rem;
-}
-
-.type-writer {
+  margin: 1rem;
   font-size: 2rem;
 }
