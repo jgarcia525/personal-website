@@ -32,6 +32,21 @@ h1 {
   width: auto;
 }
 
+/* Buttons */
+.btn-atomic-tangerine {
+  color: var(--raisin-black);
+  background-color: var(--atomic-tangerine);
+  border-color: var(--atomic-tangerine);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 50px;
+  box-shadow: 10px 10px 12px 1px rgb(0 0 0 / 20%);
+}
+
+.btn-atomic-tangerine:hover {
+  color: var(--baby-powder);
+}
+
 /* Offcanvas */
 .offcanvas {
   max-width: 80vw;

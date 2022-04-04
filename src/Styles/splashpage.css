@@ -1,0 +1,28 @@
+.splash-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+    to right top,
+    #eddea4,
+    #b9d39d,
+    #86c5a2,
+    #59b3ab,
+    #3e9eb1,
+    #4a97be,
+    #698dc1,
+    #8a81b9,
+    #b881b5,
+    #de82a4,
+    #f48c8b,
+    #f7a072
+  );
+}
+.type-writer-container {
+  margin: 1rem;
+  font-size: 2.5rem;
+  color: var(--baby-powder);
+  text-shadow: 1px 1px 2px var(--raisin-black);
+}
