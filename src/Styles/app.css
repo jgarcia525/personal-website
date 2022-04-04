@@ -45,6 +45,7 @@ h1 {
 
 .btn-atomic-tangerine:hover {
   color: var(--baby-powder);
+  box-shadow: none;
 }
 
 /* Offcanvas */
