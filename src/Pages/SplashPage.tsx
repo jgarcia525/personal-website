@@ -62,7 +62,7 @@ const SplashPage = () => {
         )}
         <FadeInOut show={!showGreeting} duration={1000}>
           <Link to='/about'>
-            <Button variant='atomic-tangerine' size='lg'>
+            <Button variant='steel-blue' size='lg'>
               Learn more
             </Button>
           </Link>

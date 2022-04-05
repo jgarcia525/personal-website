@@ -48,6 +48,21 @@ h1 {
   box-shadow: none;
 }
 
+.btn-steel-blue {
+  color: var(--raisin-black);
+  background-color: var(--steel-blue);
+  border-color: var(--steel-blue);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 50px;
+  box-shadow: 10px 10px 12px 1px rgb(0 0 0 / 20%);
+}
+
+.btn-steel-blue:hover {
+  color: var(--baby-powder);
+  box-shadow: none;
+}
+
 /* Offcanvas */
 .offcanvas {
   max-width: 80vw;
