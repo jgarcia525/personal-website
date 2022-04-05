@@ -1,0 +1,28 @@
+.about-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../Images/paris.jpg') center/cover no-repeat fixed;
+}
+
+.company-card {
+  color: var(--raisin-black);
+}
+
+.company-card-img-container {
+  padding: 2rem;
+}
+
+.company-card-img {
+  object-fit: contain;
+  height: 15vh;
+}
+
+.company-card-subtitle {
+  margin-bottom: 1rem;
+}
+
+.company-card-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
