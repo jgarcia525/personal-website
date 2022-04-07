@@ -38,7 +38,7 @@ body {
 
 .section-steel-blue {
   background-color: var(--steel-blue);
-  color: var(--baby-powder);
+  color: white;
 }
 
 .section-baby-powder {
@@ -47,6 +47,10 @@ body {
 
 .section-atomic-orange {
   background-color: var(--atomic-tangerine);
+}
+
+.section-raisin-black {
+  background-color: var(--raisin-black);
 }
 
 /* Buttons */

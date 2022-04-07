@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { FadeInOut, NavigationBar } from '../Components';
+import { FadeInOut } from '../Components';
 import Typewriter from 'typewriter-effect';
 import '../Styles/splashpage.css';
 
@@ -60,7 +60,7 @@ const SplashPage = () => {
             </FadeInOut>
           </div>
         )}
-        <FadeInOut show={!showGreeting} duration={1000}>
+        <FadeInOut show={!showGreeting} duration={500}>
           <Link to='/about'>
             <Button variant='steel-blue' size='lg'>
               Learn more

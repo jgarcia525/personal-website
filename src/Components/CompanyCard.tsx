@@ -4,6 +4,7 @@ import { Card, Button, ListGroup } from 'react-bootstrap';
 interface CompanyCardProps {
   companyLogoUrl: string;
   jobTitle: string;
+  position: string;
   teamName: string;
   jobDescription: string;
   technologies: string;
@@ -21,15 +22,13 @@ const CompanyCard = (props: CompanyCardProps) => {
           src={props.companyLogoUrl}
         />
       </div>
-      <div className='company-card-body-container'>
-        <Card.Body>
-          <Card.Title>{props.jobTitle}</Card.Title>
-          <Card.Subtitle className='mb-2 text-muted'>
-            {props.teamName}
-          </Card.Subtitle>
-          <Card.Text>{props.jobDescription}</Card.Text>
-        </Card.Body>
-      </div>
+      <Card.Body>
+        <Card.Title>{props.jobTitle}</Card.Title>
+        <Card.Subtitle className='mb-2 text-muted'>
+          {props.position}
+        </Card.Subtitle>
+        <Card.Text>{props.jobDescription}</Card.Text>
+      </Card.Body>
       <ListGroup className='list-group-flush'>
         <ListGroup.Item>{props.technologies}</ListGroup.Item>
       </ListGroup>
