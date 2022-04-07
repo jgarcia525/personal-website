@@ -1,12 +1,15 @@
 .about-section {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('../Images/paris.jpg') center/cover no-repeat fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
 .card.company-card {
   color: black;
   box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
-
   border-radius: 2em;
   transition: transform 0.2s ease;
 }
